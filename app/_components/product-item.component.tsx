@@ -1,4 +1,4 @@
-import { Product } from "./product-list.vm";
+import { Product } from "../product-list.vm";
 import styles from "./product-item.module.css";
 import Image from "next/image";
 

@@ -1,6 +1,6 @@
 import styles from "./product-list.module.css";
 import { ProductItem } from "./product-item.component";
-import { Product } from "./product-list.vm";
+import { Product } from "../product-list.vm";
 
 interface Props {
   products: Product[];

@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 import { mockProducts } from "@/app/_mock/products";
-import { ProductList } from "./product-list.component";
+import { ProductList } from "./_components";
 
 export default function Home() {
   return (
