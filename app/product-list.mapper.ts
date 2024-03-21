@@ -16,5 +16,4 @@ const mapProductFromApiToVm = (product: ProductApi): Product => ({
   id: product.id,
   name: product.name,
   price: formatCurrency(product.price),
-  imageUrl: product.imageUrl,
 });
