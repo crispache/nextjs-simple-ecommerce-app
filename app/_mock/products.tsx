@@ -1,6 +1,6 @@
-import { Product } from "../product-list.vm";
+import { ProductApi } from "../product-list.api-model";
 
-export const mockProducts: Product[] = [
+export const mockProducts: ProductApi[] = [
   {
     id: 1,
     name: "Lajusticia colágeno con magnesio 450comp",
