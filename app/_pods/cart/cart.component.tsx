@@ -1,5 +1,6 @@
 import { Product } from "./cart.vm";
-
+import styles from './cart.module.css';
+import { CartHeader } from "./components";
 interface Props {
   products: Product[];
 }
@@ -7,9 +8,9 @@ interface Props {
 export const CartComponent: React.FC<Props> = (props) => {
   const { products } = props;
     return (
-      <>
-        <h1>CARRITO</h1>
-      </>
+      <article className={styles.cart}>
+        <CartHeader />
+      </article>
     );
   };
   
