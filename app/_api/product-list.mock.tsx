@@ -1,4 +1,4 @@
-import { ProductApi } from "../product-list.api-model";
+import { ProductApi } from "./product-list.api-model";
 
 export const mockProducts: ProductApi[] = [
   {

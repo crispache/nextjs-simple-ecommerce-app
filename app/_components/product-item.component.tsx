@@ -1,6 +1,6 @@
+import Image from "next/image";
 import { Product } from "../product-list.vm";
 import styles from "./product-item.module.css";
-import Image from "next/image";
 
 interface Props {
   product: Product;

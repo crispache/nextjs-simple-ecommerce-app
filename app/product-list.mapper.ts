@@ -1,6 +1,6 @@
-import { formatCurrency } from "./_common";
-import { ProductApi } from "./product-list.api-model";
+import { ProductApi } from "./_api";
 import { Product } from "./product-list.vm";
+import { formatCurrency } from "./_common";
 
 export const mapProductListFromApiToVm = (
   products: ProductApi[]
