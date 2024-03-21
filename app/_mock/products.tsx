@@ -1,11 +1,4 @@
-
-/* TODO: Quitar de aquí */
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-  imageUrl: string;
-}
+import { Product } from "../product-list.vm";
 
 export const mockProducts: Product[] = [
   {
