@@ -1,0 +1,11 @@
+.productList {
+  list-style: none;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 70px;
+  width: 100%;
+}
