@@ -1,3 +1,5 @@
+'use client'
+
 import { CartContext } from "./cart.context";
 import { useCartReducer } from "./cart.reducer";
 
