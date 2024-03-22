@@ -1,17 +1,17 @@
 import { useReducer } from "react";
-import { CartActionsReducer, Product } from "./cart.model";
+import { CART_ACTION_TYPE, CartActionsReducer, Product } from "./cart.model";
 
 const cartInitialState: Product[] = [];
 const cartReducer = (state: Product[], action: CartActionsReducer): Product[] => {
     const { type, payload } = action;
     switch (type) {
-      case 'ADD_TO_CART':
+      case CART_ACTION_TYPE.ADD_TO_CART:
         return [
           ...state,
           payload
         ];
 
-        case 'REMOVE_FROM_CART': {
+        case CART_ACTION_TYPE.REMOVE_FROM_CART: {
           const { id } = payload;
           return state.filter(product => product.id !== id);
         }
@@ -26,12 +26,12 @@ export const useCartReducer = () => {
     const [state, dispatch] = useReducer(cartReducer, cartInitialState);
 
     const addToCart = (product: Product) => dispatch({
-        type: 'ADD_TO_CART', 
+        type: CART_ACTION_TYPE.ADD_TO_CART, 
         payload: product
     });
 
     const removeFromCart = (product: Product) => dispatch({
-      type: 'REMOVE_FROM_CART', 
+      type: CART_ACTION_TYPE.REMOVE_FROM_CART, 
       payload: product
   });
 

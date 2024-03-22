@@ -15,6 +15,11 @@ export interface CartActionsReducer {
 }
 
 
+export enum CART_ACTION_TYPE {
+    ADD_TO_CART = 'ADD_TO_CART',
+    REMOVE_FROM_CART = 'REMOVE_FROM_CART',
+}
+
 export interface CartContextModel {
     cart: Product[];
     addToCart: (product: Product) => void;
