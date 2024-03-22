@@ -1,0 +1,19 @@
+
+.productItemImage {
+  border: 1px solid #c5c5c5;
+}
+
+
+.productItemName {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.productItemPrice {
+  font-size: 1.3rem;
+  font-weight: 500;
+  flex-grow: 1;
+  text-align: end;
+  min-width: 200px;
+}
