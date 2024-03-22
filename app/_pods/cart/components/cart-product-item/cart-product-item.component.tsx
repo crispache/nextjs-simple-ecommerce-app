@@ -1,7 +1,9 @@
+'use client'
 
 import Image from "next/image";
 import { Product } from "../../cart.vm";
 import styles from './cart-product-item.module.css';
+import { useCartContext } from "@/app/_core";
 
 interface Props {
   product: Product;
@@ -9,6 +11,7 @@ interface Props {
 
 export const CartProductItem: React.FC<Props> = (props) => {
   const { product } = props;
+  const { removeFromCart } = useCartContext();
   return (
     <>
        <Image
@@ -20,7 +23,7 @@ export const CartProductItem: React.FC<Props> = (props) => {
         />
       <h3 className={styles.productItemName}> {product.name} </h3>
       <p className={styles.productItemPrice}> {product.price} </p>
-      <button className={styles.productItemTrashButton}>
+      <button className={styles.productItemTrashButton} onClick={()=> removeFromCart(product)}>
         <Image
           src="/icons/trash.png"
           width={20}

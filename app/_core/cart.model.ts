@@ -10,13 +10,19 @@ export interface Product {
 
 
 export interface CartActionsReducer {
-    type: "ADD_TO_CART"; // Añadir el resto de actions
+    type: 'ADD_TO_CART' | 'REMOVE_FROM_CART';
     payload: Product;
 }
 
+
+export enum CART_ACTION_TYPE {
+    ADD_TO_CART = 'ADD_TO_CART',
+    REMOVE_FROM_CART = 'REMOVE_FROM_CART',
+}
 
 export interface CartContextModel {
     cart: Product[];
     addToCart: (product: Product) => void;
     isProductAddedToCart: (productId: number) => boolean;
+    removeFromCart: (product: Product) => void;
 }
