@@ -11,7 +11,7 @@ export const CartComponent: React.FC<Props> = (props) => {
     <article className={styles.cart}>
       <CartHeader />
       <CartProductList products={products} />
-      <CartSummary />
+      <CartSummary products={products}/>
     </article>
   );
 };
