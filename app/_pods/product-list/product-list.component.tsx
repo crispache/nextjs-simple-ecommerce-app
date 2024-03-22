@@ -1,12 +1,12 @@
 import styles from "./product-list.module.css";
-import { ProductItem } from "./product-item.component";
-import { Product } from "../product-list.vm";
+import { Product } from "./product-list.vm";
+import { ProductItem } from "./components";
 
 interface Props {
   products: Product[];
 }
 
-export const ProductList: React.FC<Props> = (props) => {
+export const ProductListComponent: React.FC<Props> = (props) => {
   const { products } = props;
   return (
     <article>

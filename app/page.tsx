@@ -1,12 +1,12 @@
 import styles from "./page.module.css";
-import { ProductList } from "./_components";
-import { mapProductListFromApiToVm } from "./product-list.mapper";
-import { mockProducts } from "./_api";
+import { ProductList } from "./_pods/product-list";
+import { Cart } from "./_pods/cart";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <ProductList products={mapProductListFromApiToVm(mockProducts)} />
+      <ProductList />
+      <Cart />
     </main>
   );
 }
