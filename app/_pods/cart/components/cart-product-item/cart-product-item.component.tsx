@@ -20,6 +20,14 @@ export const CartProductItem: React.FC<Props> = (props) => {
         />
       <h3 className={styles.productItemName}> {product.name} </h3>
       <p className={styles.productItemPrice}> {product.price} </p>
+      <button className={styles.productItemTrashButton}>
+        <Image
+          src="/icons/trash.png"
+          width={20}
+          height={20}
+          alt="Papelera"
+        />
+      </button>
     </>
   );
 };
