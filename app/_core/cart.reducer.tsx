@@ -10,7 +10,12 @@ const cartReducer = (state: Product[], action: CartActionsReducer): Product[] =>
           ...state,
           payload
         ];
-    
+
+        case 'REMOVE_FROM_CART': {
+          const { id } = payload;
+          return state.filter(product => product.id !== id);
+        }
+       
       default:
         return state;
     }
@@ -25,9 +30,14 @@ export const useCartReducer = () => {
         payload: product
     });
 
+    const removeFromCart = (product: Product) => dispatch({
+      type: 'REMOVE_FROM_CART', 
+      payload: product
+  });
+
     const isProductAddedToCart = (productId: number): boolean => {
       return state.some(product => product.id === productId);
     }
 
-    return { state, addToCart, isProductAddedToCart }
+    return { state, addToCart, isProductAddedToCart, removeFromCart }
 }
