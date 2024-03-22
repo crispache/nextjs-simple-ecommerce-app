@@ -1,6 +1,6 @@
 import { Product } from "./cart.vm";
 import styles from "./cart.module.css";
-import { CartHeader, CartProductList } from "./components";
+import { CartHeader, CartProductList, CartSummary } from "./components";
 interface Props {
   products: Product[];
 }
@@ -11,6 +11,7 @@ export const CartComponent: React.FC<Props> = (props) => {
     <article className={styles.cart}>
       <CartHeader />
       <CartProductList products={products} />
+      <CartSummary />
     </article>
   );
 };

@@ -13,8 +13,8 @@ export const CartProductItem: React.FC<Props> = (props) => {
     <>
        <Image
           src={product.imageUrl}
-          width={80}
-          height={80}
+          width={70}
+          height={70}
           alt="Imagen del producto"
           className={styles.productItemImage}
         />

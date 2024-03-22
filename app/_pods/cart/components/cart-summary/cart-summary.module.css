@@ -1,0 +1,21 @@
+
+.cartSummary {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.cartSummaryTotalProducts {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.cartSummaryTotalPrice {
+    font-size: 1.6rem;
+    font-weight: 500;
+    flex-grow: 1;
+    text-align: end;
+    min-width: 200px;
+}
