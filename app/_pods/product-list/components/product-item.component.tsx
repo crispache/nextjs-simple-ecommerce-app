@@ -11,14 +11,20 @@ interface Props {
 
 export const ProductItem: React.FC<Props> = (props) => {
   const { product } = props;
-  const { addToCart } = useCartContext();
+  const { addToCart, isProductAddedToCart } = useCartContext();
+  // TODO: REVISAR (performance)
+  const productPriceClass = isProductAddedToCart(product.id)
+    ? styles.productPriceDisabled
+    : styles.productPrice;
+
   return (
     <>
       <h3 className={styles.productName}> {product.name} </h3>
-      <p className={styles.productPrice}> {product.price} </p>
+      <p className={productPriceClass}>{product.price}</p>
       <button
         className={styles.productAddToCartButton}
         onClick={() => addToCart(product)}
+        disabled={isProductAddedToCart(product.id)}
       >
         <Image
           src="/icons/add-to-cart.png"

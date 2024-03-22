@@ -8,12 +8,13 @@ interface Props {
 }
 
 export const CartProvider: React.FC<Props> = ({ children }) => {
-    const { state, addToCart } = useCartReducer();
+    const { state, addToCart, isProductAddedToCart } = useCartReducer();
     return (
       <CartContext.Provider
         value={{
             cart: state,
-            addToCart: addToCart
+            addToCart: addToCart,
+            isProductAddedToCart
         }}>
         {children}
       </CartContext.Provider>

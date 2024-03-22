@@ -18,4 +18,5 @@ export interface CartActionsReducer {
 export interface CartContextModel {
     cart: Product[];
     addToCart: (product: Product) => void;
+    isProductAddedToCart: (productId: number) => boolean;
 }

@@ -25,5 +25,9 @@ export const useCartReducer = () => {
         payload: product
     });
 
-    return { state, addToCart }
+    const isProductAddedToCart = (productId: number): boolean => {
+      return state.some(product => product.id === productId);
+    }
+
+    return { state, addToCart, isProductAddedToCart }
 }
