@@ -7,13 +7,13 @@
 /* TODO: REFACTORING => productPrice - productPriceDisabled */
 .productPrice {
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 500;
   color: black;
 }
 
 .productPriceDisabled {
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 500;
   color:#cccccc;
 }
 
