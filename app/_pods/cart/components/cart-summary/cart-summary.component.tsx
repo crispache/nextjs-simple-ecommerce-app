@@ -17,7 +17,7 @@ export const CartSummary: React.FC<Props> = (props) => {
 
     return (
       <div className={styles.cartSummary}>
-        <h2> TOTAL </h2>
+        <h2 className={styles.cartSummaryTitle}> TOTAL </h2>
         <p className={styles.cartSummaryTotalProducts}> ({products.length} productos)</p>
         <p className={styles.cartSummaryTotalPrice}> { totalPrice } </p>
       </div>
