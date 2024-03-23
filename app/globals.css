@@ -1,3 +1,16 @@
+:root {
+  --primary-color: #8bbf01;
+  --secondary-color: #cccccc;
+
+  --dark-primary-color: #6ea024;
+  --light-secondary-color: #efefef;
+
+  --text-color: black;
+  --text-disabled: #cccccc;
+
+  --background-color: white;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -11,5 +24,5 @@ body {
 }
 
 body {
-  background: white;
+  background: var(--background-color);
 }

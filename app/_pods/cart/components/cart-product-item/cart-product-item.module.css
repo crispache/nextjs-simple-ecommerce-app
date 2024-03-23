@@ -28,5 +28,5 @@
 
 .productItemTrashButton:hover {
   cursor: pointer;
-  background-color: #efefef;
+  background-color: var(--light-secondary-color);
 }

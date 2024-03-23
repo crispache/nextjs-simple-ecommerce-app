@@ -1,9 +1,9 @@
 
 .cartHeader {
-    color: #8cc305;
+    color: var(--primary-color);
     font-size: 1.2rem;
     font-weight: 500;
     text-transform: uppercase;
     padding: 1.5rem;
-    border-bottom: 2px solid #8cc305;
+    border-bottom: 2px solid var(--primary-color);
 }
