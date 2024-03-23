@@ -1,38 +1,48 @@
 .productName {
   font-size: 1.1rem;
   font-weight: 300;
-  flex-grow: 2;
+  flex-basis: 20rem;
+  flex-grow: 1;
 }
 
-/* TODO: REFACTORING => productPrice - productPriceDisabled */
-.productPrice {
+.productPrice, .productPriceDisabled {
   font-size: 1.3rem;
   font-weight: 500;
-  color: black;
+}
+
+.productPrice {
+  color: var(--text-color);
 }
 
 .productPriceDisabled {
-  font-size: 1.3rem;
-  font-weight: 500;
-  color:#cccccc;
+  color: var(--text-disabled);
 }
 
 .productAddToCartButton {
   padding: 0.4rem;
-  width: 90px;
+  min-width: 90px;
   height: 45px;
   border-style: none;
   border-radius: 0.2rem;
-
-  background-color: #8bbf01;
+  background-color: var(--primary-color);
 }
 
 .productAddToCartButton:hover {
   cursor: pointer;
-  background-color: #6ea024;
+  background-color: var(--dark-primary-color);
 }
 
 .productAddToCartButton:disabled {
   cursor: not-allowed;
-  background-color: #cccccc;
+  background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .productName {
+    font-size: 1rem;
+  }
+
+  .productPrice, .productPriceDisabled {
+    font-size: 1.2rem;
+  }
 }

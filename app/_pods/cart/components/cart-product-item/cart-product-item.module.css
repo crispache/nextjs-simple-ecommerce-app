@@ -13,9 +13,9 @@
 .productItemPrice {
   font-size: 1.3rem;
   font-weight: 500;
-  flex-grow: 1;
   text-align: end;
-  min-width: 200px;
+  flex-basis: 8rem;
+  flex-grow: 1;
 }
 
 .productItemTrashButton {
@@ -28,5 +28,5 @@
 
 .productItemTrashButton:hover {
   cursor: pointer;
-  background-color: #efefef;
+  background-color: var(--light-secondary-color);
 }

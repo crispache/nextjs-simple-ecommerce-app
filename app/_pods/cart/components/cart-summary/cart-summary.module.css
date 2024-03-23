@@ -14,12 +14,12 @@
 .cartSummaryTotalProducts {
     font-size: 1.2rem;
     font-weight: 300;
+    flex-basis: 8rem;
+    flex-grow: 1;
 }
 
 .cartSummaryTotalPrice {
     font-size: 1.6rem;
     font-weight: 700;
-    flex-grow: 1;
     text-align: end;
-    min-width: 200px;
 }

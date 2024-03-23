@@ -1,4 +1,7 @@
 .productList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   list-style: none;
 }
 
@@ -6,6 +9,12 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  height: 70px;
+  min-height: 65px;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .product {
+    gap: 1rem;
+  }
 }
