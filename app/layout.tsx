@@ -5,6 +5,7 @@ import { open_sans } from "./_core";
 export const metadata: Metadata = {
   title: "Simple ecommerce app",
   description: "A simple ecommerce app using Next.js",
+  keywords: ['nextjs', 'react', 'ecommerce']
 };
 
 export default function RootLayout({
